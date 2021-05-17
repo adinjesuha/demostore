@@ -19,7 +19,7 @@ export function Footer() {
         </div>
       </div>
       <div className={copyright}>
-        Copyright &copy; {new Date().getFullYear()} · All rights reserved
+        Copyright &copy; {new Date().getFullYear()} · <a href="https://adinjesuha.netlify.app/" target="_blank">Adin Jesuha</a>
       </div>
     </footer>
   )

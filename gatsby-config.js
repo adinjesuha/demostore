@@ -2,12 +2,12 @@ require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
-    siteTitle: "gatsby-starter-shopify",
-    siteTitleDefault: "gatsby-starter-shopify by @GatsbyJS",
-    siteUrl: "https://shopify-demo.gatsbyjs.com",
+    siteTitle: "Demo Store",
+    siteTitleDefault: "Demo Store by @adinjesuha",
+    siteUrl: "https://demostorehn.vercel.app/",
     hrefLang: "en",
     siteDescription:
-      "A Gatsby starter using the latest Shopify plugin showcasing a store with product overview, individual product pages, and a cart.",
+      "Demo store from latest Gatsby + Shopify plugin showcasing a store with product overview, individual product pages, and a cart.",
     siteImage: "/default-og-image.jpg",
     twitter: "@gatsbyjs",
   },

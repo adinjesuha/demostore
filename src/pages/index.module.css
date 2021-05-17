@@ -3,24 +3,47 @@
   padding-right: var(--size-gutter-raw);
   padding-top: var(--space-lg);
   padding-bottom: var(--space-3xl);
-  max-width: 76ch;
+  max-width: 100%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.flex > div:first-child{
+  text-align: center;
+  max-width: 600px;
+}
+
+.flex > div:last-child{
+  max-width: 420px;
 }
 
 .intro {
+  background: linear-gradient(90deg,#10A39E,#2CA72C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  font-weight: 800;
+  margin-bottom: -0.1em;
   padding-bottom: var(--space-lg);
-  line-height: var(--dense);
-  font-size: var(--text-display);
-  color: var(--text-color-secondary);
 }
 
 .callOut {
-  padding-bottom: var(--space-lg);
-  font-size: var(--text-display);
-  font-weight: var(--bold);
+  margin: 0 0 1rem;
   line-height: var(--dense);
   line-height: var(--dense);
   letter-spacing: var(--tight);
-  color: var(--text-color-secondary);
+  font-weight: var(--bold);
+  font-size: 0.875rem;
+  color: #088413;
+  text-transform: uppercase;
 }
 
 .callOut > strong {
@@ -33,8 +56,90 @@
   line-height: var(--dense);
   letter-spacing: var(--tight);
   color: var(--text-color-secondary);
+  margin-top: 1.25rem;
 }
 
 .deployButton {
   margin-top: var(--space-lg);
+}
+
+.linkButton{
+  display: inline-block;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  background: #663399;
+  border: 1px solid #663399;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.125rem;
+  min-height: 3rem;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  align-self: center;
+  margin-top: auto;
+  line-height: 1;
+  transition: background 250ms,border 250ms,color 250ms;
+}
+
+.ghostButton {
+  align-self: center;
+  min-height: 3rem;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  display: inline-block;
+  align-items: center;
+  color: #663399;
+  font-weight: 700;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+.buttonGroup a:last-child {
+  margin-top: 1.25rem;
+} 
+
+@media (min-width: 550px){
+  .buttonGroup {
+    flex-direction: row;
+  }
+  .buttonGroup a:last-child {
+    margin-left: 1.25rem;
+    margin-top: 0;
+  }
+  .callOut {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .flex {
+    flex-direction: row;
+    gap: 3rem;
+    text-align: left;
+  }
+  .flex > div:first-child{
+    max-width: none;
+    width: 55%;
+    text-align: left;
+  }
+  .flex > div:last-child{
+    max-width: none;
+    max-height: 520px;
+    width: 45%;
+  }
+  .callOut {
+    font-size: 1.125rem;
+  }
+  .intro {
+    font-size: 3.375rem;
+  }
+  .buttonGroup {
+    justify-content: flex-start;
+  }
 }
