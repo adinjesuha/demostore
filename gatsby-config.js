@@ -7,9 +7,9 @@ module.exports = {
     siteUrl: "https://demostorehn.vercel.app/",
     hrefLang: "en",
     siteDescription:
-      "Demo store from latest Gatsby + Shopify plugin showcasing a store with product overview, individual product pages, and a cart.",
+      "Demo store with product overview, individual product pages, and a cart.",
     siteImage: "/default-og-image.jpg",
-    twitter: "@gatsbyjs",
+    twitter: "@adinjesuha",
   },
   flags: {
     FAST_DEV: true,
