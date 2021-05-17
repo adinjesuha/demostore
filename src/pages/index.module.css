@@ -100,9 +100,9 @@
   margin-top: 1.25rem;
 }
 
-.buttonGroup a:last-child {
+.buttonGroup > a:last-child {
   margin-top: 1.25rem;
-} 
+}
 
 @media (min-width: 550px){
   .buttonGroup {

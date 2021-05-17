@@ -32,8 +32,9 @@ export default function IndexPage({ data }) {
             <p className={callOut}>Demo Store</p>
             <h1 className={intro}>Controla cada detalle de tu tienda en linea</h1>
             <p className={callToAction}>
-              Websites increíbles, 100% personalizables a tu gusto, que cargan en milisegundos y ofrecen experiencias de compra gratificantes a todos sus visitantes. <strong>Contáctame:</strong>
+              Websites increíbles, 100% personalizables a tu gusto, que cargan en milisegundos y ofrecen experiencias de compra gratificantes a todos sus visitantes, con capacidad de hasta <span className={callOut}>10k productos</span> y <span className={callOut}>30k variantes.</span> 
             </p>
+            <p className={callToAction}><strong>Contáctame:</strong></p>
             <div className={buttonGroup}>
               <a href="mailto:adinjesuha@gmail.com" target="_blank" className={linkButton}>adinjesuha@gmail.com
               </a>
