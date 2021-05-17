@@ -97,7 +97,7 @@ export function LineItem({ item }) {
         </div>
         <div className={remove}>
           <button onClick={handleRemove}>
-            <DeleteIcon /> Remove
+            <DeleteIcon /> Eliminar
           </button>
         </div>
       </td>

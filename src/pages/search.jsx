@@ -157,7 +157,7 @@ function SearchPage({
 
   return (
     <Layout>
-      <h1 className={visuallyHidden}>Search Results</h1>
+      <h1 className={visuallyHidden}>Resultados de la busqueda</h1>
       <div className={main}>
         <div className={search} aria-hidden={modalOpen}>
           <SearchBar defaultTerm={filters.term} setFilters={setFilters} />
@@ -175,7 +175,7 @@ function SearchPage({
           </button>
           <div className={sortSelector}>
             <label>
-              <span>Sort by:</span>
+              <span>Agrupado por:</span>
               <select
                 value={sortKey}
                 // eslint-disable-next-line
@@ -193,7 +193,7 @@ function SearchPage({
         </div>
         <section className={[filterStyle, showModal && modalOpen].join(" ")}>
           <div className={filterTitle}>
-            <h2>Filter</h2>
+            <h2>Filtrar</h2>
             <button aria-hidden onClick={() => setShowModal(false)}>
               <CrossIcon />
             </button>
@@ -216,15 +216,15 @@ function SearchPage({
         >
           {isFetching ? (
             <p className={progressStyle}>
-              <Spinner aria-valuetext="Searching" /> Searching
+              <Spinner aria-valuetext="Searching" /> Buscando
               {filters.term ? ` for "${filters.term}"…` : `…`}
             </p>
           ) : (
             <p className={resultsStyle}>
-              Search results{" "}
+              Resultados de busqueda{" "}
               {filters.term && (
                 <>
-                  for "<span>{filters.term}</span>"
+                  por "<span>{filters.term}</span>"
                 </>
               )}
             </p>

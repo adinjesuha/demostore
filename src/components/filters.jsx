@@ -32,7 +32,7 @@ export function Filters({
   return (
     <>
       <CheckFilter
-        name="Type"
+        name="Tipo"
         items={productTypes}
         selectedItems={filters.productTypes}
         setSelectedItems={(value) => updateFilter("productTypes", value)}
@@ -41,7 +41,7 @@ export function Filters({
       <details className={priceFilterStyle} open={true}>
         <summary>
           <div className={summary}>
-            Price
+            Precio
             {(filters.maxPrice || filters.minPrice) && (
               <button
                 className={clearButton}
@@ -80,7 +80,7 @@ export function Filters({
       </details>
       <hr />
       <CheckFilter
-        name="Brands"
+        name="Marcas"
         items={vendors}
         selectedItems={filters.vendors}
         setSelectedItems={(value) => updateFilter("vendors", value)}

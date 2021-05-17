@@ -169,7 +169,7 @@ export default function Product({ data: { product, suggestions } }) {
                       aria-label="Variants"
                       onChange={(event) => handleOptionChange(index, event)}
                     >
-                      <option value="">{`Select ${name}`}</option>
+                      <option value="">{`Seleccionar ${name}`}</option>
                       {values.map((value) => (
                         <option value={value} key={`${name}-${value}`}>
                           {value}
@@ -196,11 +196,11 @@ export default function Product({ data: { product, suggestions } }) {
               />
             </div>
             <div className={metaSection}>
-              <span className={labelFont}>Type</span>
+              <span className={labelFont}>Tipo:</span>
               <span className={tagList}>
                 <Link to={product.productTypeSlug}>{product.productType}</Link>
               </span>
-              <span className={labelFont}>Tags</span>
+              <span className={labelFont}>Tags:</span>
               <span className={tagList}>
                 {product.tags.map((tag) => (
                   <Link to={`/search?t=${tag}`}>{tag}</Link>
